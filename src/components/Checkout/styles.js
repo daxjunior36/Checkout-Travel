@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import BackgroundCheckout from "../../assets/images/imagem-Principal.svg";
-
+import BackgroundCheckout from "../../assets/images/paisagem.jpg";
+import AviaoUp from "../../assets/icons/aviaoUP.svg";
+// import BackgroundCheckout from "../../assets/images/mar.jpg";
 
 
 export const ContainerPrincipal =  styled.div`
@@ -15,29 +16,34 @@ background-size: cover;
 
 `
 
+export const Input = styled.input`
+
+`
+
 export const ContainerAuxilar = styled.div`
 display: flex;
+width: 100%;
 padding: 40px;
 flex-direction: column;
 align-items: center;
-gap: 20px;
-flex-shrink: 0;
+border: 0;
 border-radius: 10px;
 background: #FFF;
 box-shadow: 0px 0px 24.3px 0px rgba(166, 171, 189, 0.25);
+
 `
 
 
 export const Container01 = styled.section`
 display: flex;
 flex-direction: column;
-border: solid green;
+
 `
 
 
-export const InfoContainer01 = styled.div`
+export const InfoContainer01 = styled.section`
 display: flex;
-border: solid blueviolet;
+
 `
 
 export const TextCheckout = styled.p`
@@ -56,13 +62,11 @@ margin-left: 102.5px;
 
 export const LabelLocPartida = styled.label`
 display: flex;
-width: 220px;
-height: 48.2px;
 color: #666;
 font-family: Nunito;
 font-style: italic;
 line-height: normal;
-/* border: solid orange; */
+border: solid orange;
 img{
   width: 20px;
   height: 20px;
@@ -103,9 +107,9 @@ line-height: normal;
 height: 48.2px;
 `
 
-export const InputDate =  styled.input`
-border: none;
-`
+// export const InputDate =  styled.input`
+// border: none;
+// `
 
 
 
@@ -121,12 +125,85 @@ height: 48.2px;
 `
 
 export const InputSelector =  styled.input`
+width: 220px;
+height: 48.2px;
+display: flex;
+`
+
+
+export const AdultoContainer =  styled.div`
+display: flex;
+border: solid black;
+display: flex;
+flex-direction: column;
+
+img {
+width: 20px;
+height: 20px;
+margin-left: 10px;
+}
+`
+
+export const PassagText =  styled.p`
+
+font-family: Nunito;
+font-size: 20px;
+font-style: italic;
+font-weight: 600;
+margin-top: 0;
+margin-left: 10px;
+`
+
+export const SelectAdultos = styled.select`
+ padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+
+`
+
+export const SelectCriancas = styled.select`
+ padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+
+`
+
+
+export const SelectBebes = styled.select`
+ padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+
+`
+
+
+
+export const AdultoLabel = styled.label`
+display: flex;
+width: 20px;
+height: 20px;
+margin-left: 10px;
+
+`
+
+export const AdultoText = styled.p`
+font-family: Nunito;
+font-size: 16px;
+font-style: italic;
+font-weight: 600;
+margin-top: 0;
+margin-left: 10px;
 `
 
 
 export const LabelNumPassageiros= styled.label`
-width: 220px;
-height: 48.2px;
+
 color: #666;
 font-family: Nunito;
 font-size: 17px;
@@ -154,11 +231,10 @@ line-height: 30px;
 
 
 export const InfoContainer02 = styled.div`
-border: solid blueviolet;
+border: solid orange;
 display: flex;
-justify-content: flex-start;
-width: 998px;
-height: 70px;
+align-items: center;
+width: 100%;
 `
 
 
@@ -166,18 +242,18 @@ height: 70px;
 export const LabelName = styled.label`
 margin-top: 22px;
 margin-right:83px;
-width: 291px;
-height: 48px;
-border: solid red;
+border: none;
+
 `
 
 export const LabelEmail = styled.label`
 margin-top: 22px;
 margin-right:83px;
-width: 291px;
-height: 48px;
-border-right: 91px;
-border: solid red;
+margin-top: 22px;
+margin-right:83px;
+border: none;
+
+
 `
 
 export const ButonBuscar = styled.button`

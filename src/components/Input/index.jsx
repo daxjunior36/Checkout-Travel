@@ -4,10 +4,15 @@ import defaultTheme from "../../style/defaultTheme";
 
 
 function InputContainer(props){
-return(
+
+  return(
+    <>
  <Style.Input 
- theme={defaultTheme} {...props}
+ theme={defaultTheme} {...props} 
 />
+{props.errors && <p> {props.errors} </p>}
+
+    </>
 )
 }
 

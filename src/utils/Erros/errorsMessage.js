@@ -1,5 +1,6 @@
 const Errors = {
-REQUIRED: 'Campo Obrigatório'
+REQUIRED: 'Campo Obrigatório',
+DATE_INVALID: 'Data inválida',
 
 }
 

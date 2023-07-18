@@ -6,13 +6,16 @@ export const ContainerPrincipal =  styled.div`
 display: flex;
 flex-direction: column;
 width:100%;
+
 `
 
 export const LogoContainer =  styled.section`
 display: flex;
 width: 89px;
 height: 44px;
+margin-bottom: 10px;
 margin-left: 317px;
+
 `
 
 
@@ -54,12 +57,14 @@ margin-right: 183px;
 `
 
 export const InfoContainer =  styled.div`
-border: solid blueviolet;
+/* border: solid blueviolet; */
 display: flex;
 min-width: 1286px;
 padding: 20px 290px 14px 304px; 
 justify-content: space-between;
 align-items: center;
+background: rgba(255, 255, 255, 0.00);
+box-shadow: 5px 5px 20px 0px rgba(37, 37, 39, 0.25);
 `
 
 export const TextPromoContainer = styled.div`
