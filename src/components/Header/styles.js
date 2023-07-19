@@ -14,7 +14,7 @@ display: flex;
 width: 89px;
 height: 44px;
 margin-bottom: 10px;
-margin-left: 317px;
+margin-left: 300px;
 
 `
 
@@ -23,16 +23,17 @@ export const AjudaMenuContainer = styled.section`
 display: flex;
 justify-content: space-around;
 align-items: center;
-margin-left: 626px;
+font-family: sans-serif;
+margin-left: 660px;
 width: 558.25px;
-height: 50px;
+height: 60px;
 
 
 img{
 
   width: 20px;
   height: 18px;
-  margin-left: 132px;
+  margin-left: 152px;
   margin-right:10px
 }
 `
@@ -40,7 +41,7 @@ img{
 
 export const TextAjuda =  styled.p`
 color: #666;
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 13px;
 font-style: normal;
 font-weight: 400;
@@ -49,7 +50,7 @@ line-height: 16px;
 
 export const TextMenu = styled.p`
 color: #666;
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 13px;
 font-style: normal;
 font-weight: 400;
@@ -81,7 +82,7 @@ img{
 export const TextPromo =  styled.p`
 color: #414042;
 
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 19px;
 font-style: normal;
 font-weight: 700;
@@ -103,7 +104,7 @@ img{
 export const TextPacotes =  styled.p`
 color: #414042;
 text-align: center;
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 19px;
 font-style: normal;
 font-weight: 700;
@@ -125,7 +126,7 @@ img{
 export const TextHoteis =  styled.p`
 color: #414042;
 text-align: center;
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 19px;
 font-style: normal;
 font-weight: 700;
@@ -147,7 +148,7 @@ img{
 export const TextVoos =  styled.p`
 color: #414042;
 text-align: center;
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 19px;
 font-style: normal;
 font-weight: 700;
@@ -169,7 +170,7 @@ img{
 export const TextOnibus =  styled.p`
 color: #414042;
 text-align: center;
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 19px;
 font-style: normal;
 font-weight: 700;
@@ -191,7 +192,7 @@ img{
 export const TextTop =  styled.p`
 color: #414042;
 text-align: center;
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 19px;
 font-style: normal;
 font-weight: 700;
@@ -215,7 +216,7 @@ img{
 export const TextCarros =  styled.p`
 color: #414042;
 text-align: center;
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 19px;
 font-style: normal;
 font-weight: 700;

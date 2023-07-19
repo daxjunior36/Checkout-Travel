@@ -35,7 +35,7 @@ export default function Header() {
         </Style.TextPacotesContainer>
         <Style.TextHoteisContainer>
       <img src={Hoteis} alt="ícone Hotel" />
-      <Style.TextHoteis>Hitéis</Style.TextHoteis>
+      <Style.TextHoteis>Hotéis</Style.TextHoteis>
         </Style.TextHoteisContainer>
         <Style.TextVoosContainer>
       <img src={Voos} alt="ícone avião" />

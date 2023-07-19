@@ -21,9 +21,9 @@ const schema = yup.object({
     // console.log(valueAtual, contexto);
   }).required(Errors.REQUIRED),
   dataVolta: yup.string().required(Errors.REQUIRED),
-  passageirosAdultos: yup.number().required(Errors.REQUIRED),
-  passageirosCrincas: yup.number().required(Errors.REQUIRED),
-  passageirosBebes: yup.number().required(Errors.REQUIRED),
+  passageirosAdultos: yup.string().required(Errors.REQUIRED),
+  passageirosCrincas: yup.string(),
+  passageirosBebes: yup.string(),
   email: yup.string().required(Errors.REQUIRED),
   nome: yup.string().required(Errors.REQUIRED),
 

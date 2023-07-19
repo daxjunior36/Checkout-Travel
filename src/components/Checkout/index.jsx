@@ -1,9 +1,7 @@
 import React from "react";
 import * as Style from "./styles";
-import SetasLR from "../../assets/icons/setasLR.svg";
 import AviaoUp from "../../assets/icons/aviaoUP.svg";
 import AviaoDown from "../../assets/icons/aviaoDOW.svg";
-import Passageiros from "../../assets/icons/passageiros.svg";
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup";
 import InputContainer from "../Input";
@@ -30,8 +28,9 @@ console.log(errors);
   <Style.InfoContainer01 >
         
       <Style.LabelLocPartida>
+     <Style.TextPartida>De onde você está saindo?</Style.TextPartida> 
+      <Style.LocalContainer>
       <img src={AviaoUp} alt="ícone avião" />
-     
       <Controller
         name="localPartida"
         control={control}
@@ -44,7 +43,7 @@ console.log(errors);
            type="text"
            placeholder="Local de partida"
            height={48}
-           width={220}
+           width={200}
            fontSize={17}
            fontWeight={400}
            borderRadius={8}
@@ -54,12 +53,15 @@ console.log(errors);
            value={value}
          />
         )}
-      />     
+      />    
+      </Style.LocalContainer> 
     </Style.LabelLocPartida>
-    <img src={SetasLR} alt="ícone de setas" />
+    {/* <img src={SetasLR} alt="ícone de setas" /> */}
 
 
     <Style.LabelLocDestino>
+     <Style.TextDestino>Para onde você vai?</Style.TextDestino>
+     <Style.LocalContainer>
       <img src={AviaoDown} alt="ícone avião" />
       <Controller
         name="localDestino"
@@ -72,7 +74,7 @@ console.log(errors);
            type="text"
            placeholder="Local de destino"
            height={48}
-           width={220}
+           width={200}
            fontSize={17}
            fontWeight={400}
            borderRadius={8}
@@ -83,9 +85,10 @@ console.log(errors);
          />
         )}
       />
- 
+ </Style.LocalContainer>
     </Style.LabelLocDestino>
     <Style.LabelDataIda>
+      <Style.TextData>Escolha a data de Ida</Style.TextData>
     <Controller
         name="dataIda"
         control={control}
@@ -96,7 +99,7 @@ console.log(errors);
           control={control}
            type="date"
            height={48}
-           width={220}
+           width={150}
            fontSize={17}
            fontWeight={400}
            borderRadius={8}
@@ -110,6 +113,7 @@ console.log(errors);
 
     </Style.LabelDataIda>
     <Style.LabelDataVolta>
+    <Style.TextData>Escolha a data da Volta</Style.TextData>
     <Controller
         name="dataVolta"
         control={control}
@@ -119,8 +123,8 @@ console.log(errors);
           errors={errors?.dataVolta?.message}
           control={control}
            type="date"
-           height={23}
-           width={123}
+           height={48}
+           width={150}
            fontSize={17}
            fontWeight={400}
            borderRadius={8}
@@ -135,23 +139,21 @@ console.log(errors);
     </Style.LabelDataVolta>
    
     <Style.AdultoContainer>
-        <img src={Passageiros} alt="" />
-        <Style.PassagText>Passageiros</Style.PassagText>
-      {/* <Style.AdultoLabel> */}
+       <Style.TextInfoPassageiro> Passageiros</Style.TextInfoPassageiro>
       <Controller
         name="passageirosAdultos"
         control={control}
         render={({ field: { onChange, onBlur, value, name }}) => (
          
         <Style.SelectAdultos
-          errors={errors?.passageiros?.message}
+          errors={errors?.passageirosAdultos?.message}
           control={control}
           name={name}       
           onChange={onChange}
           onBlur={onBlur}
           value={value}
         >
-        <option value="Adultos">Adultos 12 anos ou mais</option>
+        <option value="">Adultos 12 anos ou mais</option>
         <option value="option1"> 1 Adulto</option>
         <option value="option2"> 2 Adultos</option>
         <option value="option3"> 3 Adultos</option>
@@ -168,14 +170,14 @@ console.log(errors);
         
         
         <Style.SelectCriancas
-        errors={errors?.passageiros?.message}
+        errors={errors?.passageirosCrincas?.message}
         control={control}
         name={name}       
         onChange={onChange}
         onBlur={onBlur}
         value={value}
         >
-        <option value="Crianças">Crianças DE 2 A 12 anos</option>
+        <option value="">Crianças DE 2 A 12 anos</option>
         <option value="option1"> 1 Criança</option>
         <option value="option2"> 2 Crianças</option>
         <option value="option3"> 3 Crianças</option>
@@ -191,14 +193,14 @@ console.log(errors);
         render={({ field: { onChange, onBlur, value, name }}) => (
          
         <Style.SelectBebes
-          errors={errors?.passageiros?.message}
+          errors={errors?.passageirosBebes?.message}
           control={control}
           name={name}       
           onChange={onChange}
           onBlur={onBlur}
           value={value}
         >
-        <option value="Bebês">Bebês Menor de 2 anos</option>
+        <option value="">Bebês Menor de 2 anos</option>
         <option value="option1"> 1 Bebê</option>
         <option value="option2"> 2 Bebês</option>
         <option value="option3"> 3 Bebês</option>
@@ -209,7 +211,7 @@ console.log(errors);
         )}
       />
 
-     
+     {errors.passageirosAdultos && <p>{errors.passageirosAdultos.message}</p>}
       {/* </Style.AdultoLabel> */}
     </Style.AdultoContainer>
   </Style.InfoContainer01>
@@ -219,6 +221,7 @@ console.log(errors);
   <Style.TextDados>DADOS PASSAGEIRO PRINCIPAL</Style.TextDados>
   <Style.InfoContainer02>
     <Style.LabelName>
+      <Style.TextName>Nome</Style.TextName>
     <Controller
         name="nome"
         control={control}
@@ -229,8 +232,8 @@ console.log(errors);
           control={control}
            type="text"
            placeholder="Nome do passageiro principal"
-           height={23}
-           width={123}
+           height={48}
+           width={291}
            fontSize={17}
            fontWeight={400}
            borderRadius={8}
@@ -244,6 +247,7 @@ console.log(errors);
 
     </Style.LabelName>
     <Style.LabelEmail>
+      <Style.TextEmail>Email</Style.TextEmail>
     <Controller
         name="email"
         control={control}
@@ -254,8 +258,8 @@ console.log(errors);
           control={control}
            type="text"
            placeholder="E-mail do passageiro principal"
-           height={23}
-           width={123}
+           height={48}
+           width={291}
            fontSize={17}
            fontWeight={400}
            borderRadius={8}
