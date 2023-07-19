@@ -11,30 +11,39 @@ width:100%;
 
 export const LogoContainer =  styled.section`
 display: flex;
-width: 89px;
+min-width:max-content;
 height: 44px;
 margin-bottom: 10px;
 margin-left: 300px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 
 `
 
 
+export const AjudaContent =  styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+`
+
 export const AjudaMenuContainer = styled.section`
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: center;
 font-family: sans-serif;
-margin-left: 660px;
-width: 558.25px;
+min-width: max-content;
 height: 60px;
-
+margin-right: 140px;
+width: 40%;
 
 img{
 
   width: 20px;
   height: 18px;
-  margin-left: 152px;
-  margin-right:10px
+  
 }
 `
 
@@ -46,6 +55,7 @@ font-size: 13px;
 font-style: normal;
 font-weight: 400;
 line-height: 16px; 
+margin-left: 10px;
 `
 
 export const TextMenu = styled.p`
@@ -54,13 +64,12 @@ font-family: sans-serif;
 font-size: 13px;
 font-style: normal;
 font-weight: 400;
-margin-right: 183px;
+margin-left: 10px;
 `
 
 export const InfoContainer =  styled.div`
 /* border: solid blueviolet; */
 display: flex;
-min-width: 1286px;
 padding: 20px 290px 14px 304px; 
 justify-content: space-between;
 align-items: center;

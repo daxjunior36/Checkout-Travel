@@ -9,8 +9,9 @@ import schema from "./schema";
 
 
 
+
 export default function Checkout() {
-  const { handleSubmit, control, formState: { errors }, } = useForm({
+  const { handleSubmit, control, formState: { errors, isValid }, } = useForm({
     resolver: yupResolver(schema),
     mode:'onChange'
   })
@@ -37,7 +38,6 @@ console.log(errors);
         render={({ field: { onChange, onBlur, value, name }}) => (
          
           <InputContainer
-          // backgroundImage= {AviaoUp}
           errors={errors?.localPartida?.message}
           control={control}
            type="text"
@@ -89,6 +89,7 @@ console.log(errors);
     </Style.LabelLocDestino>
     <Style.LabelDataIda>
       <Style.TextData>Escolha a data de Ida</Style.TextData>
+      <Style.InfoContent>
     <Controller
         name="dataIda"
         control={control}
@@ -110,7 +111,7 @@ console.log(errors);
          />
         )}
       />
-
+</Style.InfoContent>
     </Style.LabelDataIda>
     <Style.LabelDataVolta>
     <Style.TextData>Escolha a data da Volta</Style.TextData>
@@ -211,7 +212,7 @@ console.log(errors);
         )}
       />
 
-     {errors.passageirosAdultos && <p>{errors.passageirosAdultos.message}</p>}
+     {errors.passageirosAdultos && <Style.ErrorMessage>{errors.passageirosAdultos.message}</Style.ErrorMessage>}
       {/* </Style.AdultoLabel> */}
     </Style.AdultoContainer>
   </Style.InfoContainer01>
@@ -222,6 +223,7 @@ console.log(errors);
   <Style.InfoContainer02>
     <Style.LabelName>
       <Style.TextName>Nome</Style.TextName>
+      <Style.InfoContent>
     <Controller
         name="nome"
         control={control}
@@ -244,10 +246,11 @@ console.log(errors);
          />
         )}
       />
-
+</Style.InfoContent>
     </Style.LabelName>
     <Style.LabelEmail>
       <Style.TextEmail>Email</Style.TextEmail>
+      <Style.InfoContent>
     <Controller
         name="email"
         control={control}
@@ -270,10 +273,12 @@ console.log(errors);
          />
         )}
       />
-
+</Style.InfoContent>
     </Style.LabelEmail>
-    <Style.ButonBuscar onClick={()=> {console.log(errors);}} label="Buscar" type="submit" >
-      BUSCAR
+    <Style.ButonBuscar onClick={()=> {
+      if(isValid) alert('Checkout Feito com Sucesso')
+    }} label="Buscar" type="submit" >
+      ENVIAR
     </Style.ButonBuscar>
      
   </Style.InfoContainer02>

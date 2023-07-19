@@ -8,9 +8,10 @@ function InputContainer(props){
   return(
     <>
  <Style.Input 
+ 
  theme={defaultTheme} {...props} 
 />
-{props.errors && <p> {props.errors} </p>}
+{props.errors && <Style.ErrorMessage> {props.errors} </Style.ErrorMessage>}
 
     </>
 )

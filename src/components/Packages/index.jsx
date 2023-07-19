@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Style from "./styles";
+// import Foto2 from "../../assets/images/Foto2.svg";
 import Foto1 from "../../assets/images/foto01.jpg";
 import Foto3 from "../../assets/images/foto03.jpg";
 import Foto5 from "../../assets/images/foto05.jpg";
@@ -27,7 +28,7 @@ export default function Packages() {
         </Style.PasagemContainer>
         <Style.BagagemContainer>
           <img src={Bagagem} alt="ícone Malas" />
-        <Style.TextBagagem>Bagagem 23Kg (Gratuita para 7 diárias)</Style.TextBagagem>
+        <Style.TextBagagem>Bagagens 23Kg (Gratuita para 7 diárias)</Style.TextBagagem>
         </Style.BagagemContainer> 
         <Style.TransferContainer>
           <img src={Transfer} alt="ícone carro" />
@@ -98,17 +99,32 @@ export default function Packages() {
 
       <Style.FotoInfoContainer02>
       <img src={Foto5} alt="foto de por do sol" />
-      </Style.FotoInfoContainer02>
-      <Style.PacotesContainer>
-    <Style.InformeContainer>
-      <Style.TextPacotes>PACOTES</Style.TextPacotes>
-    </Style.InformeContainer>
-      <Style.ValorContainer02>
+      <Style.InformeContainer>
+       
+      <Style.TextPacotes>VOOS</Style.TextPacotes>
+    <Style.ValorContainer02>
           <Style.TextDiarias>3 diárias a partir de</Style.TextDiarias>
-          <Style.TextValor02>R$ 337</Style.TextValor02>
+          <Style.TextValor02>R$ 156</Style.TextValor02>
            <img src={SetaBlack} alt="ícone de seta" />
-        </Style.ValorContainer02>
-      </Style.PacotesContainer>
+        </Style.ValorContainer02>   
+    </Style.InformeContainer>
+      </Style.FotoInfoContainer02>
+
+
+      <Style.FotoInfoContainer02>
+      <img src={Foto5} alt="foto de por do sol" />
+      <Style.InformeContainer>
+      <Style.TextPacotes>VOOS</Style.TextPacotes>
+    <Style.ValorContainer02>
+          <Style.TextDiarias>3 diárias a partir de</Style.TextDiarias>
+          <Style.TextValor02>R$ 156</Style.TextValor02>
+           <img src={SetaBlack} alt="ícone de seta" />
+        </Style.ValorContainer02>   
+    </Style.InformeContainer>
+      </Style.FotoInfoContainer02>
+
     </Style.ContainerPrincipal>
+
+    
   )
 }

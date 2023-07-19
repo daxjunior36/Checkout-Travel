@@ -10,9 +10,13 @@ background-repeat: no-repeat;
 justify-content: center;
 align-items: center;
 height: 100vh;
-width: 100vw;
+width: 100%;
 background-size: cover;
 
+`
+
+export const ErrorMessage = styled.p`
+color: red;
 `
 
 export const Input = styled.input`
@@ -57,6 +61,12 @@ display: flex;
 
 `
 
+export const InfoContent = styled.div`
+::placeholder { 
+  padding: 20px;
+
+ } 
+`
 
 export const LocalContainer = styled.div`
 ::placeholder { 
@@ -139,6 +149,7 @@ font-style: italic;
 font-weight: 400;
 line-height: normal;
 margin-left:20px;
+
 `
 
 
@@ -205,8 +216,9 @@ border: 1px solid #ccc;
 border-radius: 4px;
 font-family: sans-serif;
 font-size: 14px;
+color: #3B3C3C;
 width: 200px;
-color: #FFFFFF;
+background-color: #4FDCE1;
 background: linear-gradient(341deg, #4FDCE1 0%, #1EB5BA 79.38%);
 box-shadow: 5px 5px 20px 0px rgba(37, 37, 39, 0.25);
 
@@ -221,7 +233,7 @@ padding: 8px;
 border: 1px solid #ccc;
 border-radius: 4px;
 font-size: 14px;
-color: #FFFFFF;
+color: #3B3C3C;
 background: linear-gradient(341deg, #4FDCE1 0%, #1EB5BA 79.38%);
 box-shadow: 5px 5px 20px 0px rgba(37, 37, 39, 0.25);
 
@@ -233,7 +245,7 @@ padding: 8px;
 border: 1px solid #ccc;
 border-radius: 4px;
 font-size: 14px;
-color: #FFFFFF;
+color: #3B3C3C;
 background: linear-gradient(341deg, #4FDCE1 0%, #1EB5BA 79.38%);
 box-shadow: 5px 5px 20px 0px rgba(37, 37, 39, 0.25);
 

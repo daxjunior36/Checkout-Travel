@@ -8,7 +8,7 @@ align-items: center;
 margin-top: 160px;
 border-radius: 10px;
 flex-wrap: wrap;
-border: solid red;
+gap:40px;
 `
 
 export const FotoInfoContainer = styled.section`
@@ -86,7 +86,7 @@ margin-left: 7px;
 export const BagagemContainer = styled.section`
 display: flex;
 align-items: center;
-width: 253px;
+width: 270px;
 height: 16px;
 margin-left: 20px;
 
@@ -287,23 +287,52 @@ img{
 }
 `
 
+
+
+
+
 export const PacotesContainer = styled.section`
 display: flex;
-padding-right: 0px;
-align-items: flex-end;
-border-radius: 10px;
+width: 100%;
+height: 130px;
+flex-direction: column;
+border-radius: 0 10px 10px 0;
 background: #FFF;
 box-shadow: 5px 5px 20px 0px rgba(37, 37, 39, 0.25);
-border: solid orange;
+margin-top: 0;
+position: relative;
+right: 5px;
+
+img{
+width: 230px;
+height: 22px;
+margin-top: 5px;
+margin-left: 20px;
+
+}
+`
+
+export const ContentOfertas = styled.div`
+
+
 `
 
 export const InformeContainer =  styled.section`
 display: flex;
-padding: 26px 0px 19px 20px;
 flex-direction: column;
-justify-content: flex-end;
-align-items: flex-start;
-gap: 6px;
+border-radius: 0 10px 10px 0;
+box-shadow: 5px 5px 20px 0px rgba(37, 37, 39, 0.25);
+width: 311px;
+height: 163px;
+
+position: relative;
+right: 5px;
+
+img{
+width: 25px;
+height: 20px;
+
+}
 `
 
 
@@ -314,6 +343,7 @@ font-size: 44px;
 font-style: normal;
 font-weight: 700;
 line-height: 29px; 
+margin: 15px;
 `
 
 export const TextDiarias = styled.p`
@@ -322,7 +352,9 @@ font-family: sans-serif;
 font-size: 13px;
 font-style: normal;
 font-weight: 400;
-line-height: 17px; 
+margin-right: 20px;
+border-left: 10px;
+
 `
 
 export const ValorContainer02 =  styled.section`
@@ -341,7 +373,7 @@ img{
 
 export const TextValor02 = styled.p`
 color: #000;
-font-family: Montserrat;
+font-family: sans-serif;
 font-size: 32px;
 font-style: normal;
 font-weight: 700;

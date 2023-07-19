@@ -18,10 +18,16 @@ export default function Header() {
       <Style.LogoContainer>
         <img src={Logo} alt="logomarca" /> 
         <Style.AjudaMenuContainer>    
+         <Style.AjudaContent>
         <img src={Ajuda} alt="ícone de ajuda" />
         <Style.TextAjuda>Ajuda</Style.TextAjuda>
+         </Style.AjudaContent>
+         <Style.AjudaContent>
         <img src={Menu} alt="ícone de menú" />      
         <Style.TextMenu>Menu</Style.TextMenu>
+         </Style.AjudaContent>
+
+       
         </Style.AjudaMenuContainer>
       </Style.LogoContainer>
       <Style.InfoContainer>

@@ -8,8 +8,13 @@ font-size: ${(props) => props.fontSize}px;
 font-weight: ${(props) => props.fontWeight}px;
 font-style: ${(props) => props.fontStyle};
 background-color: ${(props)=> props.theme.COLORS.WHITE };
+text-align: center;
 
 /* background-image: ${(props) => props.backgroundImage}; */
 /* padding: 12.6px 53px 12.6px 42px; */
 
+`
+
+export const ErrorMessage = styled.p`
+color: red;
 `
