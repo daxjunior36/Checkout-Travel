@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+<!DOCTYPE html>
+<html lang="en">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Checkout de Viagem - Projeto do Candidato</title>
+</head>
 
-## Available Scripts
+<body>
+    <h1>Página de Checkout de Viagem - Projeto do Candidato</h1>
 
-In the project directory, you can run:
+    <h2>Descrição do Projeto</h2>
+    <p>Este é um projeto de página de checkout de viagem desenvolvido para um cliente de turismo como parte do
+        processo seletivo para a vaga de desenvolvedor front-end nesta empresa. A página foi criada utilizando as
+        tecnologias React, Styled Components, Yup (para validações) e React Hook Form, com o objetivo de oferecer uma
+        experiência responsiva, fácil de usar e visualmente atraente para os usuários.</p>
 
-### `npm start`
+    <h2>Demo</h2>
+    <p>Uma demonstração ao vivo da página pode ser acessada através do seguinte link:
+        <a href="https://exemplo-checkout-viagem.com">Demo da Página de Checkout de Viagem</a></p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    <h2>Tecnologias Utilizadas</h2>
+    <ul>
+        <li>React.js</li>
+        <li>Styled Components</li>
+        <li>Yup (para validações)</li>
+        <li>React Hook Form</li>
+    </ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    <h2>Instruções para Execução</h2>
+    <ol>
+        <li>Certifique-se de ter o Node.js instalado em sua máquina.</li>
+        <li>Clone este repositório em sua máquina local utilizando o comando:
+            <code>git clone https://github.com/seu-usuario/check-viagem.git</code></li>
+        <li>Navegue para o diretório do projeto:
+            <code>cd check-viagem</code></li>
+        <li>Instale as dependências do projeto:
+            <code>npm install</code></li>
+        <li>Inicie o servidor de desenvolvimento:
+            <code>npm start</code></li>
+        <li>Abra seu navegador e acesse a página em:
+            <code>http://localhost:3000</code></li>
+    </ol>
 
-### `npm test`
+    <h2>Funcionalidades</h2>
+    <p>A página de checkout de viagem contém um formulário com os seguintes campos:</p>
+    <ul>
+        <li>Data de ida: Utiliza um seletor de data amigável ao usuário, permitindo que os usuários escolham a data
+            desejada para a viagem.</li>
+        <li>Data de volta: Também utiliza um seletor de data amigável ao usuário para selecionar a data de retorno da
+            viagem.</li>
+        <li>Quantidade de passageiros: É possível escolher a quantidade de passageiros adultos e crianças
+            separadamente.</li>
+        <li>Origem: Campo para inserir o local de origem da viagem.</li>
+        <li>Destino: Campo para inserir o local de destino da viagem.</li>
+        <li>Nome do passageiro principal: Solicita o nome do passageiro responsável pela reserva.</li>
+        <li>E-mail do passageiro principal: Campo para inserir o e-mail do passageiro principal.</li>
+    </ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    <p>O formulário utiliza validações do Yup para garantir que todos os campos sejam preenchidos corretamente antes
+        do envio.</p>
 
-### `npm run build`
+    <p>Após o envio bem-sucedido do formulário, o usuário receberá uma mensagem de confirmação de reserva.</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    <h2>Contribuição</h2>
+    <p>Este projeto foi criado como parte do processo seletivo, mas caso você tenha sugestões de melhorias ou encontre
+        problemas, sinta-se à vontade para abrir um problema (issue) ou enviar um pull request. Suas contribuições são
+        bem-vindas!</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    <h2>Licença</h2>
+    <p>Este projeto é licenciado sob a <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    <h2>Contato</h2>
+    <p>Caso tenha alguma dúvida ou precise de mais informações, sinta-se à vontade para entrar em contato comigo pelo
+        e-mail: seu.email@example.com.</p>
+</body>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</html>
