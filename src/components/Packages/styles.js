@@ -11,6 +11,8 @@ flex-wrap: wrap;
 gap:40px;
 `
 
+
+
 export const FotoInfoContainer = styled.section`
 display: flex;
 align-items: center;

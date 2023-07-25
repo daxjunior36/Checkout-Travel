@@ -7,6 +7,18 @@ display: flex;
 flex-direction: column;
 width:100%;
 
+/* @media (min-width: 768px) {
+  max-width: 768px; 
+  margin: 0 auto; 
+}
+
+@media (min-width: 992px) {
+  max-width: 992px; 
+}
+
+@media (min-width: 1200px) {
+  max-width: 1200px; 
+} */
 `
 
 export const LogoContainer =  styled.section`

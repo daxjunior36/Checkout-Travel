@@ -1,6 +1,5 @@
 import React from 'react';
 import * as Style from "./styles";
-// import Foto2 from "../../assets/images/Foto2.svg";
 import Foto1 from "../../assets/images/foto01.jpg";
 import Foto3 from "../../assets/images/foto03.jpg";
 import Foto5 from "../../assets/images/foto05.jpg";
@@ -14,9 +13,11 @@ import Seguro from "../../assets/icons/seguro.svg";
 import Seta from "../../assets/icons/seta-direita.svg";
 import SetaBlack from "../../assets/icons/seta-dir-black.svg";
 
+
 export default function Packages() {
   return (
     <Style.ContainerPrincipal>
+
       <Style.FotoInfoContainer>
       <img src={Foto3} alt="foto de por do sol" />
       <Style.PacotesImperdiveis>

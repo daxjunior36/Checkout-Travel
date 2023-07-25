@@ -23,14 +23,26 @@ background: linear-gradient(353deg, #4FDCE1 0%, #1EB5BA 79.38%);
 
 export const InformeContainer = styled.section`
 width: 100%;
-
 display: flex;
-
-/* padding: 0px 34px 0px 13px; */
 align-items: center;
 justify-content: center;
 gap: 53px;
 
+
+/* @media (min-width: 768px) {
+  max-width: 768px; 
+  margin: 0 auto; 
+}
+
+
+@media (min-width: 992px) {
+  max-width: 992px; 
+}
+
+
+@media (min-width: 1200px) {
+  max-width: 1200px; 
+} */
 `
 
 export const TextContainer = styled.section`
